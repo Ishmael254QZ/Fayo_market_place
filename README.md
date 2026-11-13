@@ -64,7 +64,7 @@ Completed:
 - Seller, buyer, and admin dashboard layouts
 - Styling system based on the requested FAYO palette and typography
 
-Remaining for the next phase:
+Remaining for the next phase,this is fronted part:
 
 - Backend configuration and Express server
 - MySQL schema and migrations
