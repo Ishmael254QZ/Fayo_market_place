@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seller Dashboard | FAYO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrapper">
+        <a href="../index.html" class="brand" aria-label="FAYO home">
+          <span class="brand-mark">F</span>
+          <span class="brand-text">FAYO</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="container dashboard-layout">
+      <aside class="sidebar">
+        <h3>Seller dashboard</h3>
+        <nav>
+          <a href="#" class="active">Overview</a>
+          <a href="#">Listings</a>
+          <a href="#">Orders</a>
+          <a href="#">Messages</a>
+          <a href="#">Profile</a>
+        </nav>
+      </aside>
+
+      <div class="dashboard-main">
+        <section class="stats-grid">
+          <div class="stat-card">
+            <span>Total listings</span>
+            <strong>128</strong>
+          </div>
+          <div class="stat-card">
+            <span>Pending review</span>
+            <strong>14</strong>
+          </div>
+          <div class="stat-card">
+            <span>Approved</span>
+            <strong>96</strong>
+          </div>
+          <div class="stat-card">
+            <span>Revenue</span>
+            <strong>KSh 482k</strong>
+          </div>
+        </section>
+
+        <section class="card-box">
+          <h3>Recent listings</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Category</th>
+                  <th>Price</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Samsung Galaxy A54</td>
+                  <td>Mobile Phones</td>
+                  <td>KSh 24,500</td>
+                  <td><span class="status-pill status-approved">Approved</span></td>
+                </tr>
+                <tr>
+                  <td>Oak Coffee Table</td>
+                  <td>Furniture</td>
+                  <td>KSh 9,500</td>
+                  <td><span class="status-pill status-pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Mountain Bike Trek Pro</td>
+                  <td>Bicycles</td>
+                  <td>KSh 18,000</td>
+                  <td><span class="status-pill status-rejected">Rejected</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="../js/seller.js"></script>
+  </body>
+</html>

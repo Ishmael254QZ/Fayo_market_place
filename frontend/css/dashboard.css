@@ -1,0 +1,23 @@
+.sidebar h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.sidebar nav {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.sidebar a {
+  display: block;
+  padding: 0.8rem 0.9rem;
+  border-radius: 12px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+  background: rgba(244, 119, 53, 0.1);
+  color: var(--primary);
+}

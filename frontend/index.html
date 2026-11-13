@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAYO | Buy Smart. Sell Easy.</title>
+    <meta
+      name="description"
+      content="FAYO is a trusted second-hand marketplace in Kenya for affordable deals, curated sellers, and convenient local trading."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="brand" aria-label="FAYO home">
+          <span class="brand-mark">F</span>
+          <span class="brand-text">FAYO</span>
+        </a>
+
+        <div class="search-shell desktop-only">
+          <input type="search" placeholder="Search products, sellers, or categories" aria-label="Search" />
+          <button type="button">Search</button>
+        </div>
+
+        <div class="location-picker desktop-only">
+          <span>Embu County</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg>
+        </div>
+
+        <nav class="nav-links desktop-only" aria-label="Main navigation">
+          <a href="pages/products.html">Browse</a>
+          <a href="#categories">Categories</a>
+          <a href="#how-it-works">How it works</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="pages/login.html" class="btn btn-ghost">Sign in</a>
+          <a href="pages/register.html" class="btn btn-primary">Register</a>
+          <a href="pages/seller-dashboard.html" class="btn btn-primary sell-btn">Sell an item</a>
+        </div>
+
+        <button class="menu-toggle mobile-only" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <span class="eyebrow">Trusted local marketplace</span>
+            <h1>Buy smart. Sell easy.</h1>
+            <p>
+              Discover quality second-hand products, connect with trusted sellers, and shop confidently across Kenya’s vibrant local market.
+            </p>
+            <div class="hero-search">
+              <input type="search" placeholder="Search for laptops, furniture, phones, bikes..." aria-label="Search products" />
+              <button type="button" class="btn btn-primary">Browse listings</button>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <strong>18k+</strong>
+                <span>Products sold</span>
+              </div>
+              <div>
+                <strong>4.8/5</strong>
+                <span>Customer rating</span>
+              </div>
+              <div>
+                <strong>3,200+</strong>
+                <span>Verified sellers</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Marketplace overview">
+            <div class="feature-panel top-card">
+              <span>Hot picks</span>
+              <h3>Refurbished laptops</h3>
+              <p>From KSh 23,500</p>
+            </div>
+            <div class="product-showcase">
+              <img
+                src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80"
+                alt="Laptop display"
+              />
+            </div>
+            <div class="feature-panel bottom-card">
+              <div>
+                <strong>1,240</strong>
+                <span>new listings this week</span>
+              </div>
+              <div class="mini-pill">Verified sellers</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-strip" id="categories">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Popular categories</span>
+              <h2>Browse by category</h2>
+            </div>
+            <a href="pages/products.html" class="text-link">View all products</a>
+          </div>
+
+          <div class="category-grid">
+            <a href="pages/products.html?category=electronics" class="category-card">
+              <span class="category-icon">📱</span>
+              <h3>Electronics</h3>
+              <p>Phones, laptops, gadgets</p>
+            </a>
+            <a href="pages/products.html?category=furniture" class="category-card">
+              <span class="category-icon">🛋️</span>
+              <h3>Furniture</h3>
+              <p>Home essentials and decor</p>
+            </a>
+            <a href="pages/products.html?category=vehicles" class="category-card">
+              <span class="category-icon">🚗</span>
+              <h3>Vehicles</h3>
+              <p>Cars, bikes, rides</p>
+            </a>
+            <a href="pages/products.html?category=home-appliances" class="category-card">
+              <span class="category-icon">🏠</span>
+              <h3>Home Appliances</h3>
+              <p>Appliances for every home</p>
+            </a>
+            <a href="pages/products.html?category=fashion" class="category-card">
+              <span class="category-icon">👕</span>
+              <h3>Fashion</h3>
+              <p>Clothes and accessories</p>
+            </a>
+            <a href="pages/products.html?category=agricultural" class="category-card">
+              <span class="category-icon">🌾</span>
+              <h3>Agricultural</h3>
+              <p>Tools and equipment</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Fresh deals</span>
+              <h2>Recently added</h2>
+            </div>
+            <a href="pages/products.html" class="text-link">Explore marketplace</a>
+          </div>
+          <div class="product-grid" id="recent-products"></div>
+        </div>
+      </section>
+
+      <section class="products-section alt-bg">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Handpicked for you</span>
+              <h2>Recommended products</h2>
+            </div>
+            <a href="pages/products.html" class="text-link">See all</a>
+          </div>
+          <div class="product-grid" id="recommended-products"></div>
+        </div>
+      </section>
+
+      <section class="sellers-section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Top sellers</span>
+              <h2>Featured sellers</h2>
+            </div>
+            <a href="pages/products.html" class="text-link">Discover local vendors</a>
+          </div>
+          <div class="seller-grid" id="featured-sellers"></div>
+        </div>
+      </section>
+
+      <section class="promo-wrapper">
+        <div class="container promo-panel">
+          <div>
+            <span class="eyebrow eye-green">List with confidence</span>
+            <h2>Sell smarter with FAYO</h2>
+            <p>Reach buyers in your county, manage listings in one place, and enjoy secure, transparent local transactions.</p>
+          </div>
+          <a href="pages/seller-dashboard.html" class="btn btn-primary">Start selling</a>
+        </div>
+      </section>
+
+      <section class="process-section" id="how-it-works">
+        <div class="container">
+          <div class="section-heading center">
+            <span class="eyebrow">Simple process</span>
+            <h2>How FAYO works</h2>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card">
+              <span class="step-number">01</span>
+              <h3>Browse listings</h3>
+              <p>Search by category, location, price, and condition to find the right deal.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">02</span>
+              <h3>Connect securely</h3>
+              <p>Message sellers directly, review profiles, and verify product details before buying.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">03</span>
+              <h3>Complete safely</h3>
+              <p>Pay using secure local arrangements or prepare for M-Pesa based checkout.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-section">
+        <div class="container">
+          <div class="section-heading center">
+            <span class="eyebrow">Your peace of mind</span>
+            <h2>Built for safe, local commerce</h2>
+          </div>
+          <div class="trust-grid">
+            <div class="trust-card">
+              <h3>Verified sellers</h3>
+              <p>Profiles are reviewed to help buyers understand who they are transacting with.</p>
+            </div>
+            <div class="trust-card">
+              <h3>Transparent moderation</h3>
+              <p>Items are reviewed before public listing so quality and compliance remain high.</p>
+            </div>
+            <div class="trust-card">
+              <h3>Secure payments</h3>
+              <p>FAYO supports secure direct arrangements and backend-ready M-Pesa processing.</p>
+            </div>
+            <div class="trust-card">
+              <h3>Buyer protection</h3>
+              <p>Clear communication channels and dispute-friendly listing workflows support trust.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark">F</span>
+            <span class="brand-text">FAYO</span>
+          </a>
+          <p>Kenya’s trusted marketplace for reliable second-hand bargains and smart buying.</p>
+        </div>
+
+        <div>
+          <h4>Marketplace</h4>
+          <ul>
+            <li><a href="pages/products.html">Browse products</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="pages/seller-dashboard.html">Sell an item</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="pages/register.html">Create account</a></li>
+            <li><a href="pages/login.html">Login</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>hello@fayo.co.ke</li>
+            <li>+254 700 123 456</li>
+            <li>Embu Town, Kenya</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 FAYO Marketplace</span>
+        <span>Buy Smart. Sell Easy.</span>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buyer Dashboard | FAYO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrapper">
+        <a href="../index.html" class="brand" aria-label="FAYO home">
+          <span class="brand-mark">F</span>
+          <span class="brand-text">FAYO</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="container dashboard-layout">
+      <aside class="sidebar">
+        <h3>Buyer dashboard</h3>
+        <nav>
+          <a href="#" class="active">Overview</a>
+          <a href="#">Saved products</a>
+          <a href="#">Orders</a>
+          <a href="#">Reviews</a>
+          <a href="#">Profile</a>
+        </nav>
+      </aside>
+
+      <div class="dashboard-main">
+        <section class="stats-grid">
+          <div class="stat-card">
+            <span>Saved items</span>
+            <strong>24</strong>
+          </div>
+          <div class="stat-card">
+            <span>Orders</span>
+            <strong>8</strong>
+          </div>
+          <div class="stat-card">
+            <span>Inquiries</span>
+            <strong>5</strong>
+          </div>
+          <div class="stat-card">
+            <span>Reviews</span>
+            <strong>12</strong>
+          </div>
+        </section>
+
+        <section class="card-box">
+          <h3>Recent orders</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Seller</th>
+                  <th>Status</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dell Inspiron 15</td>
+                  <td>Asha Traders</td>
+                  <td><span class="status-pill status-approved">Shipped</span></td>
+                  <td>KSh 28,500</td>
+                </tr>
+                <tr>
+                  <td>LG Fridge 250L</td>
+                  <td>Kiboko Home</td>
+                  <td><span class="status-pill status-pending">Pending</span></td>
+                  <td>KSh 42,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse Products | FAYO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrapper">
+        <a href="../index.html" class="brand" aria-label="FAYO home">
+          <span class="brand-mark">F</span>
+          <span class="brand-text">FAYO</span>
+        </a>
+
+        <div class="search-shell desktop-only">
+          <input id="global-search" type="search" placeholder="Search products or sellers" aria-label="Search" />
+          <button type="button">Search</button>
+        </div>
+
+        <div class="location-picker desktop-only">
+          <span>Embu County</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg>
+        </div>
+
+        <nav class="nav-links desktop-only" aria-label="Main navigation">
+          <a href="products.html">Browse</a>
+          <a href="../index.html#categories">Categories</a>
+          <a href="../index.html#how-it-works">How it works</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-ghost">Sign in</a>
+          <a href="register.html" class="btn btn-primary">Register</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <div class="container page-hero__inner">
+          <div>
+            <span class="eyebrow eye-green">Marketplace</span>
+            <h1>Find your next great deal</h1>
+            <p>Browse affordable second-hand products across Embu County and nearby towns.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" style="margin-top: -2rem;">
+        <div class="filter-panel">
+          <div class="filter-layout">
+            <div class="filter-control">
+              <label for="category-filter">Category</label>
+              <select id="category-filter">
+                <option value="all">All categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Mobile Phones">Mobile Phones</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Home Appliances">Home Appliances</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Vehicles">Vehicles</option>
+                <option value="Motorcycles">Motorcycles</option>
+                <option value="Bicycles">Bicycles</option>
+              </select>
+            </div>
+
+            <div class="filter-control">
+              <label for="location-filter">Location</label>
+              <select id="location-filter">
+                <option value="all">All locations</option>
+                <option value="Embu Town">Embu Town</option>
+                <option value="Runyenjes">Runyenjes</option>
+                <option value="Kangaru">Kangaru</option>
+                <option value="Kiritiri">Kiritiri</option>
+                <option value="Ishiara">Ishiara</option>
+              </select>
+            </div>
+
+            <div class="filter-control">
+              <label for="price-min">Min price</label>
+              <input id="price-min" type="number" min="0" placeholder="KSh 0" />
+            </div>
+
+            <div class="filter-control">
+              <label for="price-max">Max price</label>
+              <input id="price-max" type="number" min="0" placeholder="KSh 200000" />
+            </div>
+
+            <div class="filter-control">
+              <label for="sort-filter">Sort by</label>
+              <select id="sort-filter">
+                <option value="recent">Recently added</option>
+                <option value="low">Lowest price</option>
+                <option value="high">Highest price</option>
+                <option value="popular">Most popular</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-label" id="result-count">Showing 0 listings</div>
+        <div class="product-grid" id="products-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="../index.html" class="brand footer-brand">
+            <span class="brand-mark">F</span>
+            <span class="brand-text">FAYO</span>
+          </a>
+          <p>Affordable second-hand products and trusted local trade.</p>
+        </div>
+        <div>
+          <h4>Marketplace</h4>
+          <ul>
+            <li><a href="products.html">Browse</a></li>
+            <li><a href="../index.html#categories">Categories</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../index.html#how-it-works">How it works</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="seller-dashboard.html">Sell</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>hello@fayo.co.ke</li>
+            <li>+254 700 123 456</li>
+            <li>Embu, Kenya</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 FAYO Marketplace</span>
+        <span>Buy Smart. Sell Easy.</span>
+      </div>
+    </footer>
+
+    <script src="../js/products.js"></script>
+  </body>
+</html>
