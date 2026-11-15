@@ -54,7 +54,7 @@ Then visit:
 
 ## Phase 1 status
 
-Completed:
+Done:
 
 - Main homepage with modern market branding
 - Responsive navigation and category cards
