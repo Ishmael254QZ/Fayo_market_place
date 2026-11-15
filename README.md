@@ -62,9 +62,8 @@ Completed:
 - Search/filter functionality with category, location, and price controls
 - Sign in and registration forms
 - Seller, buyer, and admin dashboard layouts
-- Styling system based on the requested FAYO palette and typography
 
-Remaining for the next phase,this is fronted part:
+Remaining for the next phase,this is fronted part:(this is a pending part,a later to do)
 
 - Backend configuration and Express server
 - MySQL schema and migrations
