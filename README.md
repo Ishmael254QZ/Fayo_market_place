@@ -1,5 +1,5 @@
 # FAYO Marketplace
-. This project is being developed in phases and the frontend foundation is now in place.
+This project is being developed in phases and the frontend foundation is now in place.
 
 ## Project structure
 
