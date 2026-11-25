@@ -1,6 +1,5 @@
 # FAYO Marketplace
-
-FAYO is a Kenyan second-hand marketplace for buying and selling trusted goods locally. This project is being developed in phases and the frontend foundation is now in place.
+. This project is being developed in phases and the frontend foundation is now in place.
 
 ## Project structure
 
